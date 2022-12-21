@@ -4,11 +4,6 @@ import os
 import psycopg2
 from psycopg2 import sql
 token ='5914702230:AAGxyrCJMu2svLtYAm05ZBp_U9xrLeunaEs'
-conn = psycopg2.connect(database="teleg_db",
-                        user="postgres",
-                        password="1234",
-                        host="localhost",
-                        port="5433")
 bot = telebot.TeleBot(token)
 @bot.message_handler(commands=['start'])
 def start(message):
